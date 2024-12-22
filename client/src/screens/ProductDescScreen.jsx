@@ -27,7 +27,7 @@ const ProductDescScreen = () => {
                             )
                         })}</select>
                         <hr />
-                        <button className="btn">ADD TO CART</button>
+                        <button className="btn bg-dark text-white">ADD TO CART</button>
                     </div>
                 </div>
             </div>
