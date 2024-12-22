@@ -23,7 +23,7 @@ const ProductDescScreen = () => {
                         <h1>Select Quantity</h1>
                         <select name="" id="">{[Array(product.countInStock).keys()].map((x, i) => {
                             return (
-                                <option value={i + 1}>{i + 1}</option>
+                                <option value={i + 1} key={i + 1}>{i + 1}</option>
                             )
                         })}</select>
                         <hr />
