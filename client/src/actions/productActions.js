@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export const getALLProducts = () => dispatch => {
-    dispatch({type : "GET_PRODUCTS_REQUEST"})
+    dispatch({ type: "GET_PRODUCTS_REQUEST" })
     axios.get("/api/products/getallproducts").then(
         (respone) => {
-            setProducts(respone.data.products)
+            dispatch({ type: "GET_PRODUCTS_SUCCESS", payload: respone.data })
         }
     ).catch((err) => {
-        console.log(err.message);
+        dispatch({ type: "GET_PRODUCTS_FAILED", payload: err })
     })
 }
