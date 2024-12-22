@@ -9,7 +9,7 @@ const Product = ({ product }) => {
                 <img src={product.image} className="img-fluid" />
                 <h1>{product.name}</h1>
                 <h1>Rating : {product.rating}</h1>
-                <Rating emptySymbol="fa fa-star-o fa-2x" fullSymbol="fa fa-star fa-2x" />
+                <Rating emptySymbol="fa fa-star-o fa-1x" fullSymbol="fa fa-star fa-1x" />
                 <h1>Price : {product.price}</h1>
             </Link>
         </div>
