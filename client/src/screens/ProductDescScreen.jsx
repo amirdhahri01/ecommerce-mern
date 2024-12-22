@@ -16,6 +16,11 @@ const ProductDescScreen = () => {
                         <p>{product.description}</p>
                     </div>
                 </div>
+                <div className="col-md-6">
+                    <div className="m-2">
+                        <h1>price : {product.price}</h1>
+                    </div>
+                </div>
             </div>
         </div>
     )
