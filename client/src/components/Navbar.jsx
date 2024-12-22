@@ -11,7 +11,9 @@ s            <div className="collapse navbar-collapse" id="navbarNav">
                         <a className="nav-link" href="#!">Login</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#!">Cart</a>
+                        <a className="nav-link" href="#!">
+                            <i className="fas fa-shopping-cart"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
