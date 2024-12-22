@@ -11,5 +11,12 @@ productsRoute.get("/getallproducts", async (req, res) => {
         products
     })
 })
-
+productsRoute.post("/getproductbyid" , async (req , res) => {
+    const {productid} = req.body;
+    const product = await Product.findById(productid);
+    res.status(200).json({
+        status: "Product Fetched Successfully",
+        product
+    })
+})
 export default productsRoute

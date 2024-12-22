@@ -13,7 +13,7 @@ export const getALLProducts = () => dispatch => {
 
 export const getALLProductById = (productid) => dispatch => {
     dispatch({ type: "GET_PRODUCTBYID_REQUEST" })
-    axios.get("/api/products/getproductbyid", { productid }).then(
+    axios.post("/api/products/getproductbyid", { productid }).then(
         (respone) => {
             dispatch({ type: "GET_PRODUCTBYID_SUCCESS", payload: respone.data.product })
         }

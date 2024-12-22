@@ -5,7 +5,7 @@ import productsRoute from "./Routes/productsRoute.js"
 configDotenv()
 connectDB()
 const app = express()
-
+app.use(express.urlencoded({ extended: false }))
 app.use("/api/products", productsRoute);
 
 app.get("/", (req, res) => {
