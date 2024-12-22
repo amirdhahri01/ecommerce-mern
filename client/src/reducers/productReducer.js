@@ -1,4 +1,9 @@
-export const getAllProductsReducer = (state = {}, action) => {
+const initialState = {
+    loading: true,
+    products: [],
+    err: null
+}
+export const getAllProductsReducer = (state = initialState , action) => {
     switch (action.type) {
         case "GET_PRODUCTS_REQUEST": return {
             loading: true
