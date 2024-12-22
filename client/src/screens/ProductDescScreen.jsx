@@ -9,6 +9,7 @@ const ProductDescScreen = () => {
     useEffect(() => {
         dispatch(getProductByIdReducer(productID))
     },[])
+
     const { loading, product, error } = useSelector(state => state.getProductById)
 
     return (

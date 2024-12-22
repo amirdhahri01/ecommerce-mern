@@ -5,12 +5,8 @@ import productsRoute from "./Routes/productsRoute.js"
 configDotenv()
 connectDB()
 const app = express()
-app.use(express.urlencoded({ extended: false }))
+app.use(express.json())
 app.use("/api/products", productsRoute);
-
-app.get("/", (req, res) => {
-    res.send("This i from backend")
-})
 
 const PORT = process.env.PORT || 5000;
 
