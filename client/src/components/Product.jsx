@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Rating from "react-rating"
 const Product = ({ product }) => {
     return (
-        <div className="col-md-3 m-5 card p-2 text-left" >
+        <div className="col-md-3 m-3 card p-2 text-left" >
             <Link to={`/product/${product.id}`}>
                 <img src={product.image} className="img-fluid" />
                 <h1>{product.name}</h1>

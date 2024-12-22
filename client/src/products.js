@@ -28,7 +28,7 @@ const products = [{
     "countInStock": 5,
     "name": "New Inspiron 15 5509 Laptop",
     "category": "electronics",
-    "image": "https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Notebooks/Inspiron/15_5508_non-touch/in5508nt_cnb_00055lf110_gr.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=668&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&size=668,402",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-black-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4535&hei=3009&qlt=100,1&resMode=sharp2&size=4535,3009&chrss=full&imwidth=5000",
     "description": "11th Generation Intel® Core™ i3-1115G4 Processor (6MB Cache, up to 4.1 GHz)  laptop Windows 10 Home Single Language, English  videocard Intel® UHD Graphics with shared graphics memory  memory 8GB, 1x8GB, DDR4, 3200MHz  harddrive 512GB M.2 PCIe NVMe Solid State Drive  color Pebble (Top cover is Pebble color, Base and Palmrest are Black color)",
 
 }, {
@@ -39,7 +39,7 @@ const products = [{
     "countInStock": 5,
     "name": "Pure Cotton Men’s Checked Shirt By NoLogo",
     "category": "fashion",
-    "image": "https://static.cilory.com/450690-thickbox_default/nologo-navy-casual-shirt.jpg",
+    "image": "https://www.kamiceria.com/media/catalog/product/cache/9063428a7c4cc4df2115466a43e2a230/K/S/KS-NOLOGO-5129-RICHMOND-58_02_1.jpg",
     "description": "Product Code 87781 Sleeves Full Sleeves Pattern Checks Neck Collar Fit Slim Fabric 100% Cotton Country of Origin India Color Navy Category Shirts",
 
 }, {
