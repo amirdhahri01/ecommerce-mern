@@ -4,16 +4,11 @@ import { getALLProducts } from '../actions/productActions'
 import { useDispatch, useSelector } from 'react-redux'
 const HomeScreen = () => {
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(getALLProducts());
     }, [dispatch])
-
     const getALLProductsState = useSelector(state => state.getAllProducts)
-
-
-    const { loading,products, error } = getALLProductsState;
-    console.log(loading, products, error);
+    const { loading, products, error } = getALLProductsState;
     return (
         <div className="container-fluid">
 

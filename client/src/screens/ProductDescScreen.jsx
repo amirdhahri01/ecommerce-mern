@@ -1,15 +1,19 @@
-import React from 'react'
-// import products from '../products'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { getProductByIdReducer } from '../reducers/productReducer';
 
 const ProductDescScreen = () => {
-
+    const dispatch = useDispatch();
     const { id: productID } = useParams();
-    // const product = products.find((product) => product.id == productID);
+    useEffect(() => {
+        dispatch(getProductByIdReducer(productID))
+    },[])
+    const { loading, product, error } = useSelector(state => state.getProductById)
 
     return (
         <div className="container">
-            {/* <div className="row">
+            {loading ? (<h1>Loading...</h1>) : error ? (<h1>Something went wrong</h1>) : (<div className="row">
                 <div className="col-md-6">
                     <div className="card P-5 m-2">
                         <img src={product.image} alt="" className="img-fluid m-3 big-img" />
@@ -30,7 +34,7 @@ const ProductDescScreen = () => {
                         <button className="btn bg-dark text-white">ADD TO CART</button>
                     </div>
                 </div>
-            </div> */}
+            </div>)}
         </div>
     )
 }
