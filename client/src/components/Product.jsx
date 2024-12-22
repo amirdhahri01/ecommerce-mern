@@ -14,7 +14,8 @@ const Product = ({ product }) => {
                     emptySymbol="fa fa-star-o fa-1x"
                     fullSymbol="fa fa-star fa-1x"
                     readonly={true}
-                    style={{ color: "orange" }} />
+                    className="rating"
+                    />
                 <h1>Price : {product.price}</h1>
             </Link>
         </div>

@@ -25,3 +25,10 @@ h1 {
 p {
   text-align: left !important;
 }
+.rating{
+    width: 100% !important;
+    color: orange;
+}
+.rating span {
+    width: 18px  ;
+}
