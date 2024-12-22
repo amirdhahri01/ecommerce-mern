@@ -18,12 +18,20 @@ const ProductDescScreen = () => {
                 </div>
                 <div className="col-md-6">
                     <div className="m-2">
-                        <h1>price : {product.price}</h1>
+                        <h1>Price : {product.price}</h1>
+                        <hr />
+                        <h1>Select Quantity</h1>
+                        <select name="" id="">{[Array(product.countInStock).keys()].map((x, i) => {
+                            return (
+                                <option value={i + 1}>{i + 1}</option>
+                            )
+                        })}</select>
+                        <hr />
+                        <button className="btn">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-
 export default ProductDescScreen
