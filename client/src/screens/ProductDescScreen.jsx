@@ -11,9 +11,8 @@ const ProductDescScreen = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-6">
-                    <div className="card">
-                        <h1>{product.name}</h1>
-                        <img src={product.image} alt="" style={{ height: "300px" }} className="img-fluid" />
+                    <div className="card P-5 m-2">
+                        <img src={product.image} alt="" className="img-fluid m-3 big-img" />
                         <p>{product.description}</p>
                     </div>
                 </div>
