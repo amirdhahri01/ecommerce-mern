@@ -1,7 +1,7 @@
 const initialState = {
     loading: true,
     products: [],
-    err: null
+    error: null
 }
 export const getAllProductsReducer = (state = initialState , action) => {
     switch (action.type) {

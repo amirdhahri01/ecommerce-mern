@@ -4,7 +4,7 @@ import { thunk } from "redux-thunk"
 import { composeWithDevTools } from "redux-devtools-extension"
 
 const finalReducer = combineReducers({
-    getAllProductsReducer: getAllProductsReducer
+    getAllProducts : getAllProductsReducer
 })
 const composeEnhancers = composeWithDevTools({
 
