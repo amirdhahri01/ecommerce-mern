@@ -5,8 +5,8 @@ const HomeScreen = () => {
     return (
         <div className="container">
             <div className="row justify-content-center">
-                {products.map((product, id) => (
-                    <Produrct product={product} key={id} />
+                {products.map((product) => (
+                    <Produrct product={product} key={product.id} />
                 ))}
             </div>
         </div>
