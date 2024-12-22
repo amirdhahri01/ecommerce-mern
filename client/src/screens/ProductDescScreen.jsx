@@ -1,16 +1,19 @@
 import React from 'react'
 import products from '../products'
+import { useParams } from 'react-router-dom';
 
-const ProductDescScreen = ({ match }) => {
-    const productID = match.params.id;
-    const product = products.find((product) => product.id === productID);
+const ProductDescScreen = () => {
+
+    const { id: productID } = useParams();
+    const product = products.find((product) => product.id == productID);
+
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-6">
                     <div className="card">
                         <h1>{product.name}</h1>
-                        <img src={product.image} alt="" className="img-fluid" />
+                        <img src={product.image} alt="" style={{ height: "300px" }} className="img-fluid" />
                         <p>{product.description}</p>
                     </div>
                 </div>
