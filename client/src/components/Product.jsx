@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom'
 import Rating from "react-rating"
 const Product = ({ product }) => {
     return (
-        <div className="col-md-3 m-5 card p-2" >
+        <div className="col-md-3 m-5 card p-2 text-left" >
             <Link to={`/product/${product.id}`}>
                 <img src={product.image} className="img-fluid" />
                 <h1>{product.name}</h1>
                 <h1>Rating : {product.rating}</h1>
-                <Rating emptySymbol="fa fa-star-o fa-1x" fullSymbol="fa fa-star fa-1x" />
+                <Rating
+                    initialRating={product.rating}
+                    emptySymbol="fa fa-star-o fa-1x"
+                    fullSymbol="fa fa-star fa-1x"
+                    readonly={true}
+                    style={{ color: "orange" }} />
                 <h1>Price : {product.price}</h1>
             </Link>
         </div>

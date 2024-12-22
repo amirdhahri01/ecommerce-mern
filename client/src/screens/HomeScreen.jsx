@@ -3,7 +3,7 @@ import products from '../products'
 import Produrct from '../components/Product'
 const HomeScreen = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row justify-content-center">
                 {products.map((product) => (
                     <Produrct product={product} key={product.id} />
