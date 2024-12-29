@@ -10,9 +10,7 @@ const ProductDescScreen = () => {
     useEffect(() => {
         dispatch(getALLProductById(productID))
     }, [])
-
     const { loading, product, error } = useSelector(state => state.getProductById)
-
     const handleAddToCart = () => {
         dispatch(addToCart(product, quantity))
     }
