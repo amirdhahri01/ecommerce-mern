@@ -1,11 +1,13 @@
-import {getAllProductsReducer, getProductByIdReducer } from "./reducers/productReducer"
+import { getAllProductsReducer, getProductByIdReducer } from "./reducers/productReducer"
 import { createStore, applyMiddleware, combineReducers } from "redux"
 import { thunk } from "redux-thunk"
 import { composeWithDevTools } from "redux-devtools-extension"
+import addToCartReducer from "./reducers/cartReducer"
 
 const finalReducer = combineReducers({
-    getAllProducts : getAllProductsReducer,
-    getProductById : getProductByIdReducer
+    getAllProducts: getAllProductsReducer,
+    getProductById: getProductByIdReducer,
+    addToCartReducer: addToCartReducer
 })
 const composeEnhancers = composeWithDevTools({
 
