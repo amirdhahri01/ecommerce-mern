@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Product from '../components/Product'
 import { getALLProducts } from '../actions/productActions'
 import { useDispatch, useSelector } from 'react-redux'
+
 const HomeScreen = () => {
     const dispatch = useDispatch();
     useEffect(() => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getALLProductById } from '../actions/productActions';
-
+import { addToCart } from '../actions/cartActions'
 const ProductDescScreen = () => {
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(1);
@@ -13,7 +13,7 @@ const ProductDescScreen = () => {
 
     const { loading, product, error } = useSelector(state => state.getProductById)
 
-    const addToCart = () => {
+    const handleAddToCart = () => {
         dispatch(addToCart(product, quantity))
     }
     return (
@@ -36,7 +36,7 @@ const ProductDescScreen = () => {
                             )
                         })}</select>
                         <hr />
-                        <button onClick={addToCart} className="btn bg-dark text-white">ADD TO CART</button>
+                        <button onClick={handleAddToCart} className="btn bg-dark text-white">ADD TO CART</button>
                     </div>
                 </div>
             </div>)}
