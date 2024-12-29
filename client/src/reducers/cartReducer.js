@@ -1,8 +1,12 @@
-const addToCartReducer = (state = { cartItems: [] }, action) => {
+const initialStateAddToCart = {
+    cartItems: []
+}
+
+const addToCartReducer = (state = initialStateAddToCart, action) => {
     switch (action.type) {
         case "ADD_TO_CART": return {
             ...state,
-            cartItems : [...cartItems, action.payload]
+            cartItems: [...state.cartItems, action.payload]
         }
         default: return state
     }
