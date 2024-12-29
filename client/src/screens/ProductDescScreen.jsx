@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getProductByIdReducer } from '../reducers/productReducer';
+import { getALLProductById } from '../actions/productActions';
 
 const ProductDescScreen = () => {
     const dispatch = useDispatch();
     const { id: productID } = useParams();
     useEffect(() => {
-        dispatch(getProductByIdReducer(productID))
+        dispatch(getALLProductById(productID))
     },[])
 
     const { loading, product, error } = useSelector(state => state.getProductById)
